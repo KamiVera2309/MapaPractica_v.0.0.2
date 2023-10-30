@@ -22,6 +22,18 @@
             </intent-filter>
         </activity>
         <activity android:name=".VistaVideo"></activity>
+        <activity
+            android:name=".ProximityActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".GyroscopeActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".RotationVectorActivity"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
     <!-- Permisos de Internet y Localización -->

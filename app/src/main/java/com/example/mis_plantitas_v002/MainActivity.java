@@ -80,10 +80,19 @@ public class MainActivity extends AppCompatActivity {
         mapController.setCenter(santiagoPoint);
         mapController.setZoom(14); // Puedes ajustar el nivel de zoom según sea necesario
 
-
-
     }
 
+    public void openProximity(View view) {
+        startActivity(new Intent(MainActivity.this, ProximityActivity.class));
+    }
+
+    public void openGyroscope(View view) {
+        startActivity(new Intent(MainActivity.this, GyroscopeActivity.class));
+    }
+
+    public void openRotationVector(View view) {
+        startActivity(new Intent(MainActivity.this, RotationVectorActivity.class));
+    }
     public void onClickVideo(View view){
         Intent intent = new Intent(this, VistaVideo.class);
         startActivity(intent);
